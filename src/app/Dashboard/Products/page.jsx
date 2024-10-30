@@ -34,9 +34,11 @@ const Products = () => {
     window.location.href = "/Dashboard/Products";
 
     const data = await response.json();
+    console.log("successfully added new product")
   };
-
+  
   const onFinishFailed = (errorInfo) => {
+    console.log("failed to added new product")
     setError(errorInfo);
   };
 
@@ -140,7 +142,7 @@ const Products = () => {
           ]}
         >
           <Select
-            defaultValue=""
+            initialvalues=""
             style={{
               width: 120,
             }}

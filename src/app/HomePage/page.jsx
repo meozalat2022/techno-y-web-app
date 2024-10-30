@@ -43,7 +43,7 @@ const HomePage = () => {
     };
     fetchProducts();
   }, []);
-
+console.log("111111110", allProducts)
   const promotion = allProducts.filter((item) => item.promotionRate > 0);
   const sortedCategories = [];
   for (let i in allCategories) {

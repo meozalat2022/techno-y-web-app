@@ -4,6 +4,7 @@ import { AudioOutlined } from "@ant-design/icons";
 import { Input, Space } from "antd";
 import Navbar from "./Navbar";
 import Link from "next/link";
+import Image from "next/image";
 const { Search } = Input;
 const suffix = (
   <AudioOutlined
@@ -42,9 +43,10 @@ const Header = () => {
         </div>
 
         {/* logo right*/}
-        <Link href="/">
-          <p>Logo in user here</p>
-        </Link>
+        <div className=" bg-red-900 w-[100] h-[50] border-black ">
+
+          <Image className="mx-6 " src='/logo.png'  width={100} height={150}/>
+        </div>
       </div>
       {/* <Navbar /> */}
     </div>

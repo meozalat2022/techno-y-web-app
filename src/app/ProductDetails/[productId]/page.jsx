@@ -41,7 +41,7 @@ const ProductDetails = ({ params }) => {
 
     fetchProduct();
   }, [productId]);
-
+console.log("00000000000000",allProducts)
   const slideLeft = () => {
     let slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft - 235;
